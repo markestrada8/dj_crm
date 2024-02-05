@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .lead {
+      padding: 10px 6px;
+      margin-top: 10px;
+      background-color: #f3f3f3;
+      width: 100%;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="/leads">Back</a>
+  <hr />
+  <h1>Lead Detail</h1>
+  <div class="lead">
+    {{ lead.first_name }} {{ lead.last_name }}, {{ lead.age }}
+    <p>Agent: {{lead.agent}}</p>
+  </div>
+
+
+</body>
+
+</html>
