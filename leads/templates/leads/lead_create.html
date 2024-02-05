@@ -19,8 +19,8 @@
 <body>
   <a href="/leads">Back</a>
   <hr />
-  <h1>Create Lead</h1>
-  <form method="POST">
+  <h1>Create a Lead</h1>
+  <form method="POST" action="/leads/create/">
     {% csrf_token %}
     {{form.as_p}}
     <button type="submit">Submit</button>

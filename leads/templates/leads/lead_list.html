@@ -23,7 +23,7 @@
 
   {% for lead in leads %}
   <div class="lead">
-    <a href="/leads/{{lead.id}}/">Name: {{ lead.first_name }} {{ lead.last_name }}, Age: {{ lead.age }}</a>
+    <a href="/leads/{{lead.id}}/">{{ lead.first_name }} {{ lead.last_name }}, {{ lead.age }}</a>
   </div>
   {% endfor %}
 
