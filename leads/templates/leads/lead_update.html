@@ -19,7 +19,7 @@
           {{form.as_p}}
           <button type="submit">Submit</button>
         </form>
-        <a
+        <a href="{% url 'leads:lead-delete' lead.id %}"
           class="flex ml-auto mt-6 w-1/2 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Delete</a>
       </div>
       <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
