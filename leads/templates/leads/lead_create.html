@@ -5,7 +5,7 @@
 <a href="{% url 'leads:lead-list' %}">Back</a>
 <hr />
 <h1>Create a Lead</h1>
-<form method="POST" action="/leads/create/">
+<form method="POST" class="mt-5">
   {% csrf_token %}
   {{form.as_p}}
   <button type="submit">Submit</button>

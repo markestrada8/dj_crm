@@ -4,8 +4,8 @@
 
 <a href="{% url 'agents:agent-list' %}">Back</a>
 <hr />
-<h1>Create an Agent</h1>
-<form method="POST" class="mt-5">
+<h1>Delete this agent?</h1>
+<form method="POST">
   {% csrf_token %}
   {{form.as_p}}
   <button type="submit">Submit</button>
