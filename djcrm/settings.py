@@ -156,4 +156,4 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     X_FRAME_OPTIONS = "DENY"
 
-    ALLOWED_HOSTS = ["https://oyster-app-r6k9l.ondigitalocean.app/"]
+    ALLOWED_HOSTS = ["*"]
