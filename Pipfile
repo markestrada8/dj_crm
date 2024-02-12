@@ -7,6 +7,9 @@ name = 'pypi'
 django = '*'
 django-crispy-forms = "*"
 crispy-tailwind = "*"
+django-environ = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
 
 [dev-packages]
 

@@ -38,7 +38,7 @@ class AgentCreateView(OrganizerAndLoginRequredMixin, generic.CreateView):
         user.is_organizer = False
         user.set_password(f'{random.randint(0, 1000000)}')
         user.save()
-        Agent.object.create(
+        Agent.objects.create(
             user=user,
             organization=self.request.user.userprofile
         )

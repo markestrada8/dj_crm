@@ -8,8 +8,9 @@
   <div class="py-5 border-b border-gray-200">
     <a class="hover:text-blue-500" href="{% url 'agents:agent-list' %}">Back</a>
   </div>
-
-  <h1 class="text-4xl text-gray-800 my-5">Create a new agent</h1>
+  <div class="py-5 border-t border-gray-200">
+    <h1 class="text-4xl text-gray-800">Create a new agent</h1>
+  </div>
   <form method="post">
     {% csrf_token %}
     {{ form|crispy }}
