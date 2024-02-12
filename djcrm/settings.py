@@ -5,7 +5,7 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-# EXPORT TO RUN LOCALALLY
+# EXPORT TO RUN LOCALLY
 # export READ_DOT_ENV_FILE=True
 READ_DOT_ENV_FILE = env.bool('READ_DOT_ENV_FILE', default=False)
 if READ_DOT_ENV_FILE:
